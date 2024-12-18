@@ -47,6 +47,14 @@ The university has an option to monitor the internship progress through feedback
 \quad The domain class diagram for the S\&C platform is presented in figure x.x. It is designed to represent all major entities and relationships described in the scenarios. The User class serves as a base class for Student, Company, and University which extend it. It encapsulates common attributes. Each subclass adds specific details needed for each role, such as CV and preferences for students, companyName and description for companies, and universityName for universities. Other key classes include InternshipAdvertisement for managing detailed internship postings, InternshipApplication for tracking application statuses, and Complaint for handling issues raised by users. Additional classes like Recommendation and Feedback enhance platform functionality by supporting personalized internship suggestions and collecting user feedback. \\
 
 The relationships between these classes reflect real-world interactions. For instance, companies create and manage InternshipAdvertisement objects, which are linked to multiple InternshipApplication objects submitted by students. The Recommendation class associates student profiles with internships using criteria (e.g. skills and preferences). Both students and companies can provide Feedback about internships and file Complaint objects for university review. Universities handle complaints, monitor internships through the InternshipMonitoring class, and ensure compliance with academic standards.
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/UML - diagram.png}
+	\caption{Domain class diagram}
+	\label{fig:DataRequest}
+\end{figure}
+
+
 %These relationships and associations provide all the functionalities on the platform, from internship advertisement creation to application management, selection processes, and complaint resolution. \\
 
 %This design emphasizes scalability, maintainability, and data integrity. Its modular structure supports future feature expansion, such as additional user roles or advanced recommendation algorithms. By separating responsibilities among students, companies, and universities, the system ensures clarity and efficiency. Strong associations between classes enforce data consistency, while role-specific features improve usability for all stakeholders. Overall, the diagram provides a comprehensive foundation for implementing the S\&C platform.
