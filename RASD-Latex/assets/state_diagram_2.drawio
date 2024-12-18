@@ -1,88 +1,108 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="Z6-9M2VTCBfnbcUTm5Nu">
-    <mxGraphModel dx="1195" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="40" y="300" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-1" target="DB-mMYPQY7Jh6TGkDNSh-4">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6HXEC6jqAS_KfBbvcYs2-1" target="DB-mMYPQY7Jh6TGkDNSh-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="360" y="550" as="sourcePoint" />
             <mxPoint x="170" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-4" target="DB-mMYPQY7Jh6TGkDNSh-6">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-4" target="DB-mMYPQY7Jh6TGkDNSh-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-4" target="DB-mMYPQY7Jh6TGkDNSh-35">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-4" target="DB-mMYPQY7Jh6TGkDNSh-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="260" y="450" />
+              <mxPoint x="500" y="615" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-4" value="&lt;b&gt;Under review&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="290" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-6" target="DB-mMYPQY7Jh6TGkDNSh-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-6" value="&lt;b&gt;Shortlisted&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-4" value="&lt;b&gt;Under review&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-8" target="DB-mMYPQY7Jh6TGkDNSh-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-8" target="DB-mMYPQY7Jh6TGkDNSh-35">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-6" target="DB-mMYPQY7Jh6TGkDNSh-8" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="740" y="450" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-8" value="&lt;b&gt;Selection process in progress&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-6" value="&lt;b&gt;Shortlisted&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-9" value="Student submits an application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="270" width="100" height="30" as="geometry" />
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-8" target="DB-mMYPQY7Jh6TGkDNSh-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-10" value="The company accepts student application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="329" y="270" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-11" value="The student answers questionnaire&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="270" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.491;entryY=-0.032;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-13" target="DB-mMYPQY7Jh6TGkDNSh-16">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="740" y="622" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-13" value="&lt;b&gt;Accepted&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="502" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-14" value="The company terminates the selection process" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="630" y="370" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-15" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="720" y="627" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="DB-mMYPQY7Jh6TGkDNSh-15">
-          <mxGeometry width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="DB-mMYPQY7Jh6TGkDNSh-15">
-          <mxGeometry x="4" y="4" width="32" height="32" as="geometry" />
-        </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-35" target="DB-mMYPQY7Jh6TGkDNSh-17">
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-8" target="DB-mMYPQY7Jh6TGkDNSh-35">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="550" y="647" />
+              <mxPoint x="560" y="470" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-35" value="&lt;b&gt;Declined&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="420" width="120" height="60" as="geometry" />
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-8" value="&lt;b&gt;Selection process in progress&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-9" value="Student submits an application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="330" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-10" value="The company accepts student application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="570" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-11" value="The student answers questionnaire&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="380" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.491;entryY=-0.032;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-13" target="DB-mMYPQY7Jh6TGkDNSh-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="747" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-13" value="&lt;b&gt;Accepted&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-14" value="The company concludes the selection process with admission" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="570" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-15" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="720" y="752" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="DB-mMYPQY7Jh6TGkDNSh-15" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="DB-mMYPQY7Jh6TGkDNSh-15" vertex="1">
+          <mxGeometry x="4" y="4" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-35" target="DB-mMYPQY7Jh6TGkDNSh-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="772" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DB-mMYPQY7Jh6TGkDNSh-35" value="&lt;b&gt;Declined&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DB-mMYPQY7Jh6TGkDNSh-1" target="6HXEC6jqAS_KfBbvcYs2-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="320" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-1" value="&lt;b&gt;Draft&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-4" value="Student creates an application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-7" value="The company rejects an application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6HXEC6jqAS_KfBbvcYs2-8" value="The company rejects an application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="510" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
