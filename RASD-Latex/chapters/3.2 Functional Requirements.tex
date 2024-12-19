@@ -194,7 +194,7 @@ The following section presents the identified use cases for S\&C, using the full
      
      
      \item \stepcounter{ucCounter} Register Company User \\
-     \textbf{Actors:} Company user, Administrator\\
+     \textbf{Actors:} Company user\\
      \textbf{Preconditions:} The company user has accessed the platform and is on the designated company sign up page. The company user has a valid email address to which they have access to. The company user possesses company tax identification documentation.\\
      \textbf{Success Guarantee (Postconditions):} The company user is successfully registered on the platform.\\
      \textbf{Main Success Scenario (or Basic Flow):} 
@@ -273,7 +273,7 @@ The following section presents the identified use cases for S\&C, using the full
         \end{enumerate}
         
         
-     \item \stepcounter{ucCounter} Edit profile
+     \item \stepcounter{ucCounter} Edit profile \\
      \textbf{Actors:} All users\\
      \textbf{Preconditions:} The user has successfully logged into the platform and is viewing their own profile.\\
      \textbf{Success Guarantee (Postconditions):} The user successfully makes changes to their profile.
@@ -294,7 +294,7 @@ The following section presents the identified use cases for S\&C, using the full
                         \item[1a.] The platform fails to recover, or the user is unable to reconnect.
                     \end{enumerate}
                  \item The user is automatically logged back in.
-                 \item The user continues from the last checkpoint
+                 \item The user continues from the last saved checkpoint.
             \end{enumerate}
         \item[2-3a.] The user makes an invalid change to their profile:
             \begin{enumerate}[label=\arabic*.]
@@ -309,9 +309,98 @@ The following section presents the identified use cases for S\&C, using the full
 
 \paragraph{Internship Advertisement Creation and Editing}
 \begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
-     \item \stepcounter{ucCounter} Create Internship Advertisement
+     \item \stepcounter{ucCounter} Create and Publish Internship Advertisement \\
+     \textbf{Actors:} Company Users\\
+     \textbf{Preconditions:} The company user has successfully logged into the platform and is viewing the landing page. The company user has been externally verified by an admin. The company user has not reached the maximum number of advertisements.\\
+     \textbf{Success Guarantee (Postconditions):} The company user successfully published an Internship Advertisement.
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company user presses the large '+' button for creating a new advertisement. The company user is redirected to the creation page.
+        \item The company user enters the mandatory information required for advertisement creation.
+        \item The company user presses the 'Publish button'.
+        \item The company user is redirected to the landing page and informed that the advertisement has been published. The company user can see his newly published advertisement.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in.
+                 \item The user continues from the last saved checkpoint.
+            \end{enumerate}
+        
+        \item[2-3a.] The company user enters invalid information in the advertisement:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the company user that the change is not possible.
+                \item The user corrects their action and proceeds with advertisement creation.
+            \end{enumerate}
+        \item[1a.; 4a.] The platform is unable to redirect the user.
+        \item[3-4a.] The advertisement is unable to be published due to server error.
+        \end{enumerate}
+
      \item \stepcounter{ucCounter} Edit Internship Advertisement
+     \textbf{Actors:} Company Users\\
+     \textbf{Preconditions:} The company user has successfully logged into the platform and is viewing the landing page. The company user has at least one active advertisement.\\
+     \textbf{Success Guarantee (Postconditions):} The company user successfully edits an Internship Advertisement.
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company user presses the large 'Edit' button for next to an existing internship advertisement. The company user is redirected to the editing page.
+        \item The company user edits the desired information required for advertisement creation.
+        \item The company user presses the 'Save \& Publish button'.
+        \item The company user is redirected to the landing page and informed that the advertisement edits have been made. The company user can see his newly edited advertisement.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in.
+                 \item The user continues from the last saved checkpoint.
+            \end{enumerate}
+        
+        \item[2-3a.] The company user enters invalid information in the advertisement:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the company user that the change is not possible.
+                \item The user corrects their action and proceeds with advertisement creation.
+            \end{enumerate}
+        \item[1a.; 4a.] The platform is unable to redirect the user.
+        \item[3-4a.] The advertisement is unable to be published due to server error.
+        \end{enumerate}
+     
      \item \stepcounter{ucCounter} Delete Internship Advertisement
+    \textbf{Actors:} Company Users\\
+     \textbf{Preconditions:} The company user has successfully logged into the platform and is viewing the landing page. The company user has at least one active advertisement.\\
+     \textbf{Success Guarantee (Postconditions):} The company user successfully deletes an Internship Advertisement.
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company user presses the large 'Delete' button for next to an existing internship advertisement. 
+        \item The system prompts the company user to check if they are certain about deletion. The company user confirms the deletion.
+        \item The company user is informed that the deletion has been made. The page is reloaded, and the advertisement is deleted.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the lading page
+            \end{enumerate}
+        
+        \item[2a.] The platform fails to display the confirmation prompt.
+        \item[2-3a.] The advertisement is unable to be deleted due to server error.
+        \end{enumerate}
+     
 \end{itemize}
 
 \paragraph{Internship Viewing \& Application}
