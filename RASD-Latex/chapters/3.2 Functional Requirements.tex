@@ -3,6 +3,10 @@
 \newcounter{reqCounter} % Define a custom counter for functional requirements
 \stepcounter{reqCounter}
 
+\newcounter{ucCounter} % Define a custom counter for functional requirements
+\stepcounter{ucCounter}
+
+
 Within this section can be found a list of functional requirements for S\&C, categorized by the major features of the platform.
 
 \paragraph{Registration of Students}
@@ -68,11 +72,13 @@ Within this section can be found a list of functional requirements for S\&C, cat
     \item \stepcounter{reqCounter} The system shall allow the company user to request the commencement of an internship from the candidate's host university. After the internship is approved by the host university, it shall commence on a predetermined date.
 \end{itemize}
 
-\paragraph{Internship Monitoring \& Complaint Management}
+\paragraph{Internship Monitoring, Complaint Management \& Feedback System}
 \begin{itemize}[label={[\textbf{FR\arabic{reqCounter}}]}, align=left, leftmargin=*]
     \item \stepcounter{reqCounter} During any stage of the internship, the system shall allow both the candidate and the company user to submit a complaint to the host university, after which the university user shall be automatically notified.
     \item \stepcounter{reqCounter} After a complaint is received, the university may choose to resolve the complaint or to terminate the internship. The system shall allow for both choices to be submitted.
     \item \stepcounter{reqCounter} The system shall not allow the termination of an internship by any party except the university user. The system shall allow a termination only after a complaint has been submitted.
+    \item \stepcounter{reqCounter} Upon the successful completion of an internship, the system shall request feedback from both the company user and the intern regarding the internship experience. Moreover, the system shall request feedback from all three users types involved in the internship regarding their satisfaction with S\&C.
+    \item \stepcounter{reqCounter} The system shall request the university to review the submitted internship feedback. After the review, the system shall allow the university to either include the ratings in the profiles of both the student user and the company user, or keep the feedback private.
 \end{itemize}
 
 % Ovo su NFRs koje sam izfiltrirao iz orginalnih FRs, koje cu dodat kasnije. Ovdje stoje samo kao note.
@@ -98,5 +104,248 @@ Within this section can be found a list of functional requirements for S\&C, cat
 
 
 \subsubsection{Use cases Diagram}
+
+
+\pagebreak
+
 \subsubsection{Use cases}
+The following section presents the identified use cases for S\&C, using the fully dressed format.
+
+\paragraph{Registration, Login \& Profile Editing}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+     \item \stepcounter{ucCounter} Student and University User Registration\\
+     \textbf{Actors:} Student or University users\\
+     \textbf{Preconditions:} The user has accessed the platform sign in page. The user has a institutionally provided account.\\
+     \textbf{Success Guarantee (Postconditions):} The user is successfully registered on the platform.\\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The enters their institutional email in the designated field.
+        \item The user presses the 'Connect my university' button.
+        \item The platform redirects the user to their institutional login page.
+        \item The user successfully signs in using their institutional credentials.
+        \item The user agrees to cross-platform data sharing and the terms of service.
+        \item The platform redirects the user to the platform landing page.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user begins the registration process from the beginning, unless fully registered already.
+            \end{enumerate}
+        \item[3a.] The user entered a badly formatted email:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email invalid.
+                \item The user re-enters his email resumes the registration process.
+            \end{enumerate}
+        \item[3b.] The user entered an email which is not connect to an institutional account, the platform is unable to redirect:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email is not connected to an institutional account.
+                \item The user re-enters his email and resumes the registration process.
+            \end{enumerate}
+        \item[3c.] The University user entered an email which is not pre-authorized for university user account creation.
+        \item[3-6*.] The institution's login system goes offline. The user is unable to resume registration.
+        \item[4a.] The user is unable to log in into his institutional account.
+        \item[5a.] The user declines cross platform data sharing and terms of service.
+        \item[6-7a.] The platform is unable to redirect the user.
+    \end{enumerate}
+
+    \item \stepcounter{ucCounter} Student and University User Login\\
+     \textbf{Actors:} Student or University users\\
+     \textbf{Preconditions:} The user has accessed the platform sign in page. The user has a institutionally provided account account which is registered on the platform.\\
+     \textbf{Success Guarantee (Postconditions):} The user is successfully logged in the platform.\\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The enters their institutional email in the designated field.
+        \item The user presses the 'Connect my university' button.
+        \item The platform redirects the user to their institutional login page.
+        \item The user successfully signs in using their institutional credentials.
+        \item The platform redirects the user to the platform landing page.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user begins the login process from the beginning, unless already logged in.
+            \end{enumerate}
+        \item[3a.] The user entered a badly formatted email:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email invalid.
+                \item The user re-enters his email resumes the registration process.
+            \end{enumerate}
+        \item[3b.] The user entered an email which is not connect to an institutional account, the platform is unable to redirect:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email is not connected to an institutional account.
+                \item The user re-enters his email and resumes the registration process.
+            \end{enumerate}
+        \item[3-5*.] The institution's login system goes offline. The user is unable to resume the login process.
+        \item[4a.] The user is unable to sign in into his institutional account.
+        \item[4-5a.] The platform is unable to redirect the user.
+        \end{enumerate}
+     
+     
+     \item \stepcounter{ucCounter} Register Company User \\
+     \textbf{Actors:} Company user, Administrator\\
+     \textbf{Preconditions:} The company user has accessed the platform and is on the designated company sign up page. The company user has a valid email address to which they have access to. The company user possesses company tax identification documentation.\\
+     \textbf{Success Guarantee (Postconditions):} The company user is successfully registered on the platform.\\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company user enters their desired email presses the 'Sign up' button.
+        \item The platform sends a verification email and informs the user.
+        \item The user receives the verification link and a password in the email.
+        \item The user presses the verification link and is redirected back to the platform. The user is informed that their email has been verified.
+        \item The user inputs the provided credentials, and successfully enters account creation.
+        \item The user successfully uploads the company name, tax id and required tax certificate.
+        \item The company user is redirected to the landing page of the platform.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The company user resumes the registration process from the last saved checkpoint.
+            \end{enumerate}
+        \item[1a.; 5a.] The user entered a badly formatted email.
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email invalid.
+                \item The user re-enters his email resumes the registration process.
+            \end{enumerate}
+        \item[1b.] The entered email has already been resisted on the platform.
+        \item[2-3a.] The user never receives the verification email.
+        \item[3-5a.] The user receives invalid credentials.
+        \item[4a.] The verification provided link fails to redirect.
+            \begin{enumerate}[label=\arabic*.]
+                \item The user copy-pastes the alternate link provided.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The alternative link is invalid. The user is unable to continue registration.
+                    \end{enumerate}
+                \item The user returns to the website and resumes the registration process.
+            \end{enumerate}
+        \item[6a.] The user is unable to upload his tax certificate.
+        \item[6-7a.] The platform is unable to redirect the user.
+    \end{enumerate}
+     
+     
+     \item \stepcounter{ucCounter} Login Company User \\
+     \textbf{Actors:} Company User\\
+     \textbf{Preconditions:} The company user has accessed the platform company login page. The company user is registered on the platform.\\
+     \textbf{Success Guarantee (Postconditions):} The company user successfully logs in.
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company user enters their credentials in the designated fields and presses the 'Log in' button.
+        \item The user successfully signs in and the platform redirects the company user to the landing page.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user begins the log in process from the beginning, unless already logged in.
+            \end{enumerate}
+        \item[1a.] The user entered a badly formatted email:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email invalid.
+                \item The user re-enters his email resumes the registration process.
+            \end{enumerate}
+        \item[1-2a.] The user entered a invalid credentials:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the entered email invalid.
+                \item The user re-enters his email resumes the registration process.
+            \end{enumerate}
+        \item[2a.] The platform is unable to redirect the user.
+        \end{enumerate}
+        
+        
+     \item \stepcounter{ucCounter} Edit profile
+     \textbf{Actors:} All users\\
+     \textbf{Preconditions:} The user has successfully logged into the platform and is viewing their own profile.\\
+     \textbf{Success Guarantee (Postconditions):} The user successfully makes changes to their profile.
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The user presses the 'Edit' button, and is redirected to the profile editing page.
+        \item The user makes a change within their profile.
+        \item The user presses the 'Save changes' button.
+        \item The user is redirected back to viewing their profile and is informed that the changes have been saved.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in.
+                 \item The user continues from the last checkpoint
+            \end{enumerate}
+        \item[2-3a.] The user makes an invalid change to their profile:
+            \begin{enumerate}[label=\arabic*.]
+                \item The platform informs the user that the change is not possible.
+                \item The user corrects their action and proceeds with making changes.
+            \end{enumerate}
+        \item[1a.; 4a.] The platform is unable to redirect the user.
+        \item[3a.] The changes are unable to be saved due to a server error.
+        \end{enumerate}
+\end{itemize}
+
+
+\paragraph{Internship Advertisement Creation and Editing}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+     \item \stepcounter{ucCounter} Create Internship Advertisement
+     \item \stepcounter{ucCounter} Edit Internship Advertisement
+     \item \stepcounter{ucCounter} Delete Internship Advertisement
+\end{itemize}
+
+\paragraph{Internship Viewing \& Application}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+    \item \stepcounter{ucCounter} View Recommendations \& Offerings
+    \item \stepcounter{ucCounter} Apply for Internship
+\end{itemize}
+
+\paragraph{Application process}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+    \item \stepcounter{ucCounter} Increment Candidate Stage
+    \item \stepcounter{ucCounter} Reject Candidate
+    \item \stepcounter{ucCounter} Send Candidate Questionnaire
+    \item \stepcounter{ucCounter} Send Candidate Interview Request
+    \item \stepcounter{ucCounter} Submit Questionnaire
+    \item \stepcounter{ucCounter} Submit Interview time slots
+\end{itemize}
+
+\paragraph{Internship initiation \& Complaint Management}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+    \item \stepcounter{ucCounter} Initiate Internship
+    \item \stepcounter{ucCounter} Submit Complaint
+    \item \stepcounter{ucCounter} Close complaint
+\end{itemize}
+
+\paragraph{Feedback management}
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+    \item \stepcounter{ucCounter} Submit feedback - Companies and Students
+    \item \stepcounter{ucCounter} Submit feedback - Universities
+    \item \stepcounter{ucCounter} Manage feedback viewership
+
+\end{itemize}
+
+
+
 \subsubsection{Requirement mapping}
+
