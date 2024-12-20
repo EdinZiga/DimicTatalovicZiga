@@ -504,21 +504,187 @@ The following section presents the identified use cases for S\&C, using the full
         \end{enumerate}
 
 
-    \item \stepcounter{ucCounter} Reply to prompt
+    \item \stepcounter{ucCounter} Reply to invitation \\
+    \textbf{Actors:} Student users, Company Users\\
+     \textbf{Preconditions:} The student user is logged into the platform and is viewing the landing page. The student has received an invitation.\\
+     \textbf{Success Guarantee (Postconditions):} The student user has successfully replied to the invitation. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The student user presses the 'Notifications' icon.
+        \item The platform displays all notifications via a pop-up.
+        \item The student views the notification and either presses the 'Reject' or 'Accept' buttons.
+        \item The platform informs the student that his action was successful.
+        \item The inviting company user receives a push notification about the candidate's decision.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate}
+        \item[1a.] The notifications are unable to be viewed to be viewed due to server error.
+        \item[4-5a.] The system is unable to process the reply due to a server error. 
+        \end{enumerate}
+
+
+        
     \item \stepcounter{ucCounter} Initiate Internship
-    \item \stepcounter{ucCounter} Submit Complaint
-    \item \stepcounter{ucCounter} Resolve complaint
+    \textbf{Actors:} Company users, University users, Student users\\
+     \textbf{Preconditions:} The student user is logged into the platform and is viewing the an active internship advertisement. The company has at least one candidate who has reached the final stage.\\
+     \textbf{Success Guarantee (Postconditions):} The internship has successfully been started. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The company users views the available candidates, and selects one to begin the internship by pressing the 'Begin' button.
+        \item The system notifies the relevant University user that an internship start request has been opened.
+        \item The company user accepts the internship request by pressing 'Approve'.
+        \item The system notifies the company user and the candidate that the internship has been initiated.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate}
+        \item[1a.] The candidates are unable to be viewed to be viewed due to server error.
+        \item[1b.] The request is unable to be processed due to server error.
+        \item[3a.] The system is unable to process the reply due to a server error. 
+        \item[3b.] The university presses the 'Reject' button.
+        \begin{enumerate}[label=\arabic*.]
+                \item The system notifies the company user and the candidate that the internship has been rejected by the university.
+            \end{enumerate}
+        
+        \end{enumerate}
+
+
+    \item \stepcounter{ucCounter} Submit Complaint \\
+    \textbf{Actors:} Student users, University users\\
+     \textbf{Preconditions:} The user is logged into the platform and is viewing an initiated internship.\\
+     \textbf{Success Guarantee (Postconditions):} The complaint has been submitted. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The user selects the 'Submit a complaint button' button.
+        \item The platform creates a dialog box.
+        \item The user enters a description of the complaint.
+        \item The user presses the 'Send' button.
+        \item The platform informs the user that the complaint has been sent.
+        \item The relevant University is notified of the complaint.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate} 
+        \item[4a.] The system fails to process the request due to server error.
+        \end{enumerate}
+
+
+    \item \stepcounter{ucCounter} Resolve complaint \\
+    \textbf{Actors:} Student users, Company users, University users\\
+     \textbf{Preconditions:} The university user is logged into the platform and is viewing the list of active complaints.\\
+     \textbf{Success Guarantee (Postconditions):} The submitted complain has successfully been resolved. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The university user views the list of complaints, and selects the complaint they wish to work on.
+        \item The platform displays a preview of the complaint, with an open input field.
+        \item The university user fills the field with the reply.
+        \item The university user presses the 'Submit reply \& Close'.
+        \item The platform informs the university user that the change was successful.
+        \item The relevant Company user and Student users are are notified of the complaint's resolution.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate} 
+        \item[4a.] The system fails to process the request due to server error.
+        \end{enumerate}
+
 \end{itemize}
 
 \paragraph{Feedback management}
-\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
-    \item \stepcounter{ucCounter} Submit feedback - Companies and Students
-    \item \stepcounter{ucCounter} Submit feedback - Universities
-    \item \stepcounter{ucCounter} Manage feedback viewership
 
+\begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
+    \item \stepcounter{ucCounter} Submit feedback. \\
+    \textbf{Actors:} Student users, Company users, University users\\
+     \textbf{Preconditions:} An internship has been successfully finished. The user is notified of a pending internship review.\\
+     \textbf{Success Guarantee (Postconditions):} The feedback has been successfully submitted. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The user presses the 'Notifications' icon.
+        \item The platform displays all notifications via a pop-up.
+        \item The student views the pending review notification and clicks on it.
+        \item The platform redirects the user to a predetermined form.
+        \item The user enters the relevant data.
+        \item The user presses the 'Submit button'.
+        \item The platform informs the user that his action was successful.
+        \item The other relevant users get notified of the submitted feedback.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate}
+        \item[1a.] The notifications are unable to be viewed to be viewed due to server error.
+        \item[6a.] The system is unable to process the reply due to a server error. 
+        \end{enumerate}
+
+
+    \item \stepcounter{ucCounter} View feedback. \\
+    \textbf{Actors:} Student users, Company users, University users\\
+     \textbf{Preconditions:} An internship has been successfully finished. All feedback has been submitted.\\
+     \textbf{Success Guarantee (Postconditions):} The feedback has been viewed. \\
+     \textbf{Main Success Scenario (or Basic Flow):} 
+     \begin{enumerate}[label=\arabic*.] 
+        \item The user presses the 'Notifications' icon.
+        \item The platform displays all notifications via a pop-up.
+        \item The student views the new feedback notification and clicks on it.
+        \item The platform displays the feedback to the user regarding that particular internship.
+     \end{enumerate} \\
+
+    \textbf{Extensions (or Alternative Flows):} 
+    \begin{enumerate}[label=\arabic*.]
+        \item[*a.] At any point, the company user disconnects or the system fails:
+            \begin{enumerate}[label=\arabic*.]
+                \item The user reconnects to the platform.
+                    \begin{enumerate}[label=\alph*.]
+                        \item[1a.] The platform fails to recover, or the user is unable to reconnect.
+                    \end{enumerate}
+                 \item The user is automatically logged back in and returned to the landing page.
+            \end{enumerate}
+        \item[1a.] The notifications are unable to be viewed to be viewed due to server error.
+        \end{enumerate}
 \end{itemize}
 
 
 
+\subsubsection{Sequence diagrams}
 \subsubsection{Requirement mapping}
 
