@@ -156,11 +156,11 @@ The following section presents the identified use cases for S\&C, using the full
 
     \item \stepcounter{ucCounter} Student and University User Login\\
      \textbf{Actors:} Student or University users\\
-     \textbf{Preconditions:} The user has accessed the platform sign in page. The user has a institutionally provided account account which is registered on the platform.\\
+     \textbf{Preconditions:} The user has accessed the platform sign in page. The user has a institutionally provided account which is registered on the platform.\\
      \textbf{Success Guarantee (Postconditions):} The user is successfully logged in the platform.\\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
-        \item The enters their institutional email in the designated field.
+        \item The user enters their institutional email in the designated field.
         \item The user presses the 'Connect my university' button.
         \item The platform redirects the user to their institutional login page.
         \item The user successfully signs in using their institutional credentials.
@@ -199,12 +199,15 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Success Guarantee (Postconditions):} The company user is successfully registered on the platform.\\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
-        \item The company user enters their desired email presses the 'Sign up' button.
+        \item The company user enters their desired email into the email field.
+        \item The company user presses the 'Sign up' button.
         \item The platform sends a verification email and informs the user.
         \item The user receives the verification link and a password in the email.
-        \item The user presses the verification link and is redirected back to the platform. The user is informed that their email has been verified.
+        \item The user presses the verification link.
+        \item The link redirects the user back to the platform. 
+        \item The user is informed that their email has been verified.
         \item The user inputs the provided credentials, and successfully enters account creation.
-        \item The user successfully uploads the company name, tax id and required tax certificate.
+        \item The user successfully uploads the company name, tax id and required tax certificate, and presses 'Submit'.
         \item The company user is redirected to the landing page of the platform.
      \end{enumerate} \\
 
@@ -218,15 +221,14 @@ The following section presents the identified use cases for S\&C, using the full
                     \end{enumerate}
                  \item The company user resumes the registration process from the last saved checkpoint.
             \end{enumerate}
-        \item[1a.; 5a.] The user entered a badly formatted email.
+        \item[1a.; 8a.] The user entered a badly formatted email.
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the user that the entered email invalid.
                 \item The user re-enters his email resumes the registration process.
             \end{enumerate}
         \item[1b.] The entered email has already been resisted on the platform.
-        \item[2-3a.] The user never receives the verification email.
-        \item[3-5a.] The user receives invalid credentials.
-        \item[4a.] The verification provided link fails to redirect.
+        \item[4a.] The user never receives the verification email.
+        \item[5a.] The verification provided link fails to redirect.
             \begin{enumerate}[label=\arabic*.]
                 \item The user copy-pastes the alternate link provided.
                     \begin{enumerate}[label=\alph*.]
@@ -234,8 +236,8 @@ The following section presents the identified use cases for S\&C, using the full
                     \end{enumerate}
                 \item The user returns to the website and resumes the registration process.
             \end{enumerate}
-        \item[6a.] The user is unable to upload his tax certificate.
-        \item[6-7a.] The platform is unable to redirect the user.
+        \item[8a.] The user's credentials are invalid.
+        \item[9a.] The user is unable to upload his tax certificate.
     \end{enumerate}
      
      
@@ -262,12 +264,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[1a.] The user entered a badly formatted email:
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the user that the entered email invalid.
-                \item The user re-enters his email resumes the registration process.
+                \item The user re-enters his email resumes the sign in process.
             \end{enumerate}
-        \item[1-2a.] The user entered a invalid credentials:
+        \item[1b.] The user entered a invalid credentials:
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the user that the entered email invalid.
-                \item The user re-enters his email resumes the registration process.
+                \item The user re-enters his email resumes the sign in process.
             \end{enumerate}
         \item[2a.] The platform is unable to redirect the user.
         \end{enumerate}
@@ -279,7 +281,8 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Success Guarantee (Postconditions):} The user successfully makes changes to their profile. \\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
-        \item The user presses the 'Edit' button, and is redirected to the profile editing page.
+        \item The user presses the 'Edit' button.
+        \item The platform redirects the user to the profile editing page.
         \item The user makes a change within their profile.
         \item The user presses the 'Save changes' button.
         \item The user is redirected back to viewing their profile and is informed that the changes have been saved.
@@ -296,13 +299,13 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user is automatically logged back in.
                  \item The user continues from the last saved checkpoint.
             \end{enumerate}
-        \item[2-3a.] The user makes an invalid change to their profile:
+        \item[3a.] The user makes an invalid change to their profile:
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the user that the change is not possible.
                 \item The user corrects their action and proceeds with making changes.
             \end{enumerate}
         \item[1a.; 4a.] The platform is unable to redirect the user.
-        \item[3a.] The changes are unable to be saved due to a server error.
+        \item[4a.] The changes are unable to be saved due to a server error.
         \end{enumerate}
 \end{itemize}
 
@@ -315,7 +318,8 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Success Guarantee (Postconditions):} The company user successfully published an Internship Advertisement. \\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
-        \item The company user presses the large '+' button for creating a new advertisement. The company user is redirected to the creation page.
+        \item The company user presses the large '+' button for creating a new advertisement. 
+        \item The platform redirects the user to the advertisement creation page.
         \item The company user enters the mandatory information required for advertisement creation.
         \item The company user presses the 'Publish button'.
         \item The company user is redirected to the landing page and informed that the advertisement has been published. The company user can see his newly published advertisement.
@@ -333,13 +337,13 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user continues from the last saved checkpoint.
             \end{enumerate}
         
-        \item[2-3a.] The company user enters invalid information in the advertisement:
+        \item[3a.] The company user enters invalid information in the advertisement:
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the company user that the change is not possible.
                 \item The user corrects their action and proceeds with advertisement creation.
             \end{enumerate}
-        \item[1a.; 4a.] The platform is unable to redirect the user.
-        \item[3-4a.] The advertisement is unable to be published due to server error.
+        \item[2a.; 5a.] The platform is unable to redirect the user.
+        \item[4a.] The advertisement is unable to be published due to server error.
         \end{enumerate}
 
      \item \stepcounter{ucCounter} Edit Internship Advertisement \\
@@ -348,7 +352,8 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Success Guarantee (Postconditions):} The company user successfully edits an Internship Advertisement. \\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
-        \item The company user presses the large 'Edit' button for next to an existing internship advertisement. The company user is redirected to the editing page.
+        \item The company user presses the large 'Edit' button for next to an existing internship advertisement. 
+        \item The platform redirects the company user to the editing page.
         \item The company user edits the desired information required for advertisement creation.
         \item The company user presses the 'Save \& Publish button'.
         \item The company user is redirected to the landing page and informed that the advertisement edits have been made. The company user can see his newly edited advertisement.
@@ -366,13 +371,13 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user continues from the last saved checkpoint.
             \end{enumerate}
         
-        \item[2-3a.] The company user enters invalid information in the advertisement:
+        \item[3a.] The company user enters invalid information in the advertisement:
             \begin{enumerate}[label=\arabic*.]
                 \item The platform informs the company user that the change is not possible.
                 \item The user corrects their action and proceeds with advertisement creation.
             \end{enumerate}
-        \item[1a.; 4a.] The platform is unable to redirect the user.
-        \item[3-4a.] The advertisement is unable to be published due to server error.
+        \item[1a.; 5a.] The platform is unable to redirect the user.
+        \item[4a.] The advertisement is unable to be published due to server error.
         \end{enumerate}
      
      \item \stepcounter{ucCounter} Delete Internship Advertisement \\
@@ -382,8 +387,9 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
         \item The company user presses the large 'Delete' button for next to an existing internship advertisement. 
-        \item The system prompts the company user to check if they are certain about deletion. The company user confirms the deletion.
-        \item The company user is informed that the deletion has been made. The page is reloaded, and the advertisement is deleted.
+        \item The system prompts the company user to check if they are certain about deletion. 
+        \item The company user confirms the deletion.
+        \item The company user is informed that the deletion has been made. 
      \end{enumerate} \\
 
     \textbf{Extensions (or Alternative Flows):} 
@@ -397,7 +403,7 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user is automatically logged back in and returned to the lading page.
             \end{enumerate}
         \item[2a.] The platform fails to display the confirmation prompt.
-        \item[2-3a.] The advertisement is unable to be deleted due to server error.
+        \item[3a.] The advertisement is unable to be deleted due to server error.
         \end{enumerate}
      
 \end{itemize}
@@ -412,10 +418,12 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
         \item The student user views the available and recommended internship offerings and chooses one.
-        \item The student user presses the desired advertisement, and is redirected to the detailed view.
+        \item The student user presses the desired advertisement 
+        \item The platform redirects the user to the detailed view.
         \item The student user presses the 'Apply' button.
         \item The system produces a prompt asking the user what do they want to submit with their application.
-        \item The user makes the desired selection and presses 'Send'.
+        \item The user makes the desired selection.
+        \item The user and presses 'Send'.
         \item The user is informed that the application was successful.
      \end{enumerate} \\
 
@@ -431,8 +439,8 @@ The following section presents the identified use cases for S\&C, using the full
             \end{enumerate}
         \item[1a.] The advertisement are unable to be viewed due to server error. 
         \item[2a.] The platform is unable to redirect the user.
-        \item[4a.] The platform fails to display the confirmation prompt.
-        \item[5-6a.] The maximum number of applicants has been reached
+        \item[5a.] The platform fails to display the confirmation prompt.
+        \item[4a.] The maximum number of applicants has been reached
         \end{enumerate}
      
     \item \stepcounter{ucCounter} Change candidate status (increment or reject) \\
@@ -442,7 +450,9 @@ The following section presents the identified use cases for S\&C, using the full
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
         \item The company user selects the 'View candidates' button for the desired internship advertisement.
-        \item The company user clicks the profile of a candidate they find interesting. The company user is redirected to that candidate's profile.
+        \item The platform redirects the company user to the page with the list of candidates.
+        \item The company user clicks the profile of a candidate they find interesting. 
+        \item The platform redirects the company user to the selected candidate's profile.
         \item The company user decides to reject the candidate or move him forward in the selection process using either the 'Reject' or 'Move forward' buttons.
         \item The company user is notified that their action was successful.
         \item The selected candidate is notified via push notification that their status has changed.
@@ -459,22 +469,23 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user is automatically logged back in and returned to the lading page.
             \end{enumerate}
         \item[1a.] The advertisement are unable to be viewed due to server error. 
-        \item[2a.] The candidate profile is unable to be viewed due to server error. 
-        \item[1b.; 2b.] The platform is unable to redirect the user.
-        \item[4-5a.] The platform fails to display the confirmation prompt.
+        \item[3a.] The candidate profile is unable to be viewed due to server error. 
+        \item[2a.; 4b.] The platform is unable to redirect the user.
+        \item[5a.] The platform fails to make the status change due to server error.
         \end{enumerate}
 
 
     \item \stepcounter{ucCounter} Send Prompt to Candidate (questionnaire or interview invitation)
     \textbf{Actors:} Company users, Student users\\
-     \textbf{Preconditions:} The company user is logged into the platform and is viewing candidate management page for an active internship advertisement. There is at least one applicant with above Stage 1.\\
+     \textbf{Preconditions:} The company user is logged into the platform and is viewing candidate management page for an active internship advertisement. There is at least one applicant above Stage 1.\\
      \textbf{Success Guarantee (Postconditions):} The company has successfully sent the desired prompt to the candidate. \\
      \textbf{Main Success Scenario (or Basic Flow):} 
      \begin{enumerate}[label=\arabic*.] 
         \item The company user selects the desired user and presses the 'Invite to more' button.
         \item The system provides a prompt to the company user.
         \item The company user selects whether they want an interview or if they prefer to send a questionnaire, providing additional relevant information.
-        \item The company user presses the 'Send Invitation button', and is notified about the successful invitation.
+        \item The company user presses the 'Send Invitation button'.
+        \item The system notifies the company user that the invitation has been successful.
         \item The student user is notified about the invitation.
      \end{enumerate} \\
 
@@ -489,8 +500,7 @@ The following section presents the identified use cases for S\&C, using the full
                  \item The user is automatically logged back in and returned to the candidate management page.
             \end{enumerate}
         \item[1a.] The candidate profiles are unable to be viewed due to server error. 
-        \item[2a.] The platform fails to display the confirmation prompt.
-        \item[4-5a.] The system fails to process the invitation due to server error.
+        \item[4a.] The system fails to process the invitation due to server error.
         \end{enumerate}
 
 
