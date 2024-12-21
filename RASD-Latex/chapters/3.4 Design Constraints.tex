@@ -4,26 +4,24 @@ The EU and EEA require that software solutions abide with the General Data Prote
 \subsubsection{Hardware limitations}
 As the platform will be hosted using AWS, the hardware limitations may only refer to possible client side limitations, which there are very few. S\&C is meant to be cross-platform, and hence, can be accessed by almost any device which is capable of processing JavaScript scripts. Broadly speaking, the following specifications can be mentioned, with the limiting factor continuing to be software support for said hardware:
 
-\textbf{For Personal Computers}
-CPU: Dual-core (e.g., Intel i3 or Core Two Duo). \\
-RAM: 2 GB minimum (4 GB recommended). \\
-Storage: 16 GB total (SSD preferred). \\
-GPU: Integrated graphics for HTML5 and CSS rendering. \\
-Internet: 1 Mbps (5 Mbps recommended). \\
-Browser: Latest version of Chrome, Firefox, Edge, or Safari. \\
-OS: Recent version of Windows, macOS, Linux, Android, or iOS. \\
-Display: 1024 x 768 resolution minimum. \\
-Input Device: HID-compliant keyboard minimum, computer mouse recommended.
-
-\textbf{For Mobile Devices}
-CPU: A10 Fusion (iOS) or ARM Cortex-A53/Snapdragon 450 (Android).
-RAM: 2 GB (iOS), 3 GB (Android).
-Storage: 16 GB total (1 GB free for cache).
-Internet: 3G minimum, 4G LTE or 5G recommended.
-Display: Retina/HD minimum, Full HD recommended.
-Browser: Safari (iOS), Chrome or modern browser (Android).
-OS: iOS 12+ or Android 7.0+.
-Input Device: Touch Screen recommended.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|>{\raggedright\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{6cm}|}
+\hline
+\textbf{For Personal Computers} & \textbf{For Mobile Devices} \\ \hline
+CPU: Dual-core (e.g., Intel i3 or Core Two Duo). & CPU: A10 Fusion (iOS) or ARM Cortex-A53/Snapdragon 450 (Android). \\ \hline
+RAM: 2 GB minimum (4 GB recommended). & RAM: 2 GB (iOS), 3 GB (Android). \\ \hline
+Storage: 16 GB total (SSD preferred). & Storage: 16 GB total (1 GB free for cache). \\ \hline
+GPU: Integrated graphics for HTML5 and CSS rendering. & GPU: Integrated graphics for HTML5 and CSS rendering. \\ \hline
+Internet: 1 Mbps (5 Mbps recommended). & Internet: 3G minimum, 4G LTE or 5G recommended. \\ \hline
+Browser: Latest version of Chrome, Firefox, Edge, or Safari. & Browser: Safari (iOS), Chrome or modern browser (Android). \\ \hline
+OS: Recent version of Windows, macOS, Linux, Android, or iOS. & OS: iOS 12+ or Android 7.0+. \\ \hline
+Display: 1024 x 768 resolution minimum. & Display: Retina/HD minimum, Full HD recommended.  \\ \hline
+Input Device: HID-compliant keyboard minimum, computer mouse recommended. & Input Device: Touch Screen recommended.\\ \hline
+\end{tabular}
+\caption{Minimum requirements for S\&C}
+\label{tab:hardware-specs}
+\end{table}
 
 \subsubsection{Any other constraints}
 The platform is meant to be 'information first' and accessible to all, therefore, performance optimizations will be prioritized where possible, such as in design complexity, image resolution, data presentation etc.
