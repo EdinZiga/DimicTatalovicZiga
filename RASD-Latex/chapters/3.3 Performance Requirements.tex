@@ -1,0 +1,32 @@
+Performance requirements fall under the category of Non-Functional Requirements (NFRs). Therefore, this section will address them as such. It is important to note that, as the platform will be fully deployed on AWS, many of these requirements will be inherently met from the start. The following requirements are defined based on an estimated peak usage of 50,000 active users, serving as a reference point to ensure quality.
+
+Below can be found a list of NFRs which relate to the performance aspects of the platform:
+
+\begin{enumerate}[label={\textbf{[NFR-P\arabic*]}}]
+   \item The system shall process a student and university registration within 5 seconds upon receiving the user data from the university's provider.  
+   \item The system shall return internship search results within 2 seconds, assuming up to 500 results.
+   \item The system shall process and post a new internship advertisement within 15 seconds.
+   \item The system shall support at least 30,000 concurrent users actively interacting with the platform.
+   \item The system shall support up to 300 simultaneous file uploads, with excess request being queued.
+   \item The system shall maintain a response time under 5 seconds at all times.
+   \item The system shall ensure that all queries do not exceed 500ms of latency.
+\end{enumerate}
+
+% Ovo su NFRs koje sam izfiltrirao iz orginalnih FRs, koje cu dodat kasnije. Ovdje stoje samo kao note.
+% \paragraph{NFRs}
+% \begin{itemize}[label={[\textbf{FR\arabic{reqCounter}}]}, align=left, leftmargin=*]
+%     \item \stepcounter{reqCounter} The system shall not retain any user data unless the student user registration process is fully completed.
+%     \item \stepcounter{reqCounter} For company validation, the system shall exclusively accept files in the .pdf format for the initial company verification document. The system shall validate the file format and ensure that the file size does not exceed 10 MB.
+%     \item \stepcounter{reqCounter} The system shall not retain any user data unless the registration process is fully completed. - Uni registartion
+%     \item \stepcounter{reqCounter} The system shall take snapshots every 10 seconds during the internship advertisement creation process, where all filled fields will be saved. - Ad creation
+%     \item \stepcounter{reqCounter} A submitted complaint has a maximum waiting period of 14 calendar days, after which the system shall automatically terminate the internship.
+%     \item \stepcounter{reqCounter} The system shall automatically filter all text inserted in user fields for profanities. - Profile Management
+%     \item \stepcounter{reqCounter} After the new company user has verified their email, the system shall generate and deliver a password with a minimum length of 32 characters, including a randomized combination of uppercase letters, lowercase letters, numbers, and special characters, for the newly created account via the verified email.
+%     \item \stepcounter{reqCounter} The system shall ensure that the input field accepts only string-type inputs, with all Unicode characters supported. The system shall validate the input in real-time and reject non-string data types.
+%     \item \stepcounter{reqCounter} Unless otherwise specified by the company, the system shall, by default, assign a 21-calendar-day duration for which the advertisement will be publicly viewable.
+%     \item \stepcounter{reqCounter} The system shall not allow advertisements to be visible for more than 90 calendar days.
+%     \item \stepcounter{reqCounter} The system shall, by default, provide the internship advertisements in batches of 10, with the most recent advertisements presented at the top of the list.
+%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the registration process is interrupted at any stage, specifying the reason for the interruption.
+%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the registration process is interrupted at any stage, specifying the reason for the interruption.
+%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the process is interrupted at any stage, specifying the reason for the interruption. The level of data retention will depend on the stage the user has reached before the interruption, as specified in [FR13].
+% \end{itemize}

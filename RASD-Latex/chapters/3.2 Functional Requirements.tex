@@ -81,28 +81,6 @@ Within this section can be found a list of functional requirements for S\&C, cat
     \item \stepcounter{reqCounter} The system shall request the university to review the submitted internship feedback. After the review, the system shall allow the university to either include the ratings in the profiles of both the student user and the company user, or keep the feedback private.
 \end{itemize}
 
-% Ovo su NFRs koje sam izfiltrirao iz orginalnih FRs, koje cu dodat kasnije. Ovdje stoje samo kao note.
-% \paragraph{NFRs}
-% \begin{itemize}[label={[\textbf{FR\arabic{reqCounter}}]}, align=left, leftmargin=*]
-%     \item \stepcounter{reqCounter} The system shall not retain any user data unless the student user registration process is fully completed.
-%     \item \stepcounter{reqCounter} For company validation, the system shall exclusively accept files in the .pdf format for the initial company verification document. The system shall validate the file format and ensure that the file size does not exceed 10 MB.
-%     \item \stepcounter{reqCounter} The system shall not retain any user data unless the registration process is fully completed. - Uni registartion
-%     \item \stepcounter{reqCounter} The system shall take snapshots every 10 seconds during the internship advertisement creation process, where all filled fields will be saved. - Ad creation
-%     \item \stepcounter{reqCounter} A submitted complaint has a maximum waiting period of 14 calendar days, after which the system shall automatically terminate the internship.
-%     \item \stepcounter{reqCounter} The system shall automatically filter all text inserted in user fields for profanities. - Profile Management
-%     \item \stepcounter{reqCounter} After the new company user has verified their email, the system shall generate and deliver a password with a minimum length of 32 characters, including a randomized combination of uppercase letters, lowercase letters, numbers, and special characters, for the newly created account via the verified email.
-%     \item \stepcounter{reqCounter} The system shall ensure that the input field accepts only string-type inputs, with all Unicode characters supported. The system shall validate the input in real-time and reject non-string data types.
-%     \item \stepcounter{reqCounter} Unless otherwise specified by the company, the system shall, by default, assign a 21-calendar-day duration for which the advertisement will be publicly viewable.
-%     \item \stepcounter{reqCounter} The system shall not allow advertisements to be visible for more than 90 calendar days.
-%     \item \stepcounter{reqCounter} The system shall, by default, provide the internship advertisements in batches of 10, with the most recent advertisements presented at the top of the list.
-%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the registration process is interrupted at any stage, specifying the reason for the interruption.
-%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the registration process is interrupted at any stage, specifying the reason for the interruption.
-%     \item \stepcounter{reqCounter} The system shall provide an appropriate error message if the process is interrupted at any stage, specifying the reason for the interruption. The level of data retention will depend on the stage the user has reached before the interruption, as specified in [FR13].
-% \end{itemize}
-
-
-
-
 \subsubsection{Use cases Diagram}
 
 
@@ -687,4 +665,88 @@ The following section presents the identified use cases for S\&C, using the full
 
 \subsubsection{Sequence diagrams}
 \subsubsection{Requirement mapping}
+The following section assesses each goal as listed in section 1.1.1, and presents which Domain Assumptions (D) and Functional Requirements(FR) match them. In cases 
 
+\begin{enumerate}[label={\textbf{[G\arabic*]}}]
+    \item \textbf{Companies create internship advertisement.} 
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D4]}] Companies provide accurate information about an internship.
+        \item[\textbf{[D7]}] Companies respond to applications promptly.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[FR10-FR15]}] Cover the registration of company users.
+        \item[\textbf{[FR20-FR25]}] Cover the creation, update, and management of internship advertisements.
+    \end{enumerate}
+    
+    \item \textbf{Students find appropriate internship and initiate contact with the selected company.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D1]}] User must have a reliable internet connection.
+        \item[\textbf{[D2]}] All users provide accurate information when creating profiles.
+        \item[\textbf{[D7]}] Companies respond to applications promptly.
+        \item[\textbf{[D8]}] Students complete selection process steps within deadlines.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[FR1-FR3]}] Cover registration and login for student users.
+        \item[\textbf{[FR16-FR18]}] Cover profile management by students.
+        \item[\textbf{[FR26-FR29]}] Cover searching, applying, and notification about internships.
+    \end{enumerate}
+    
+    \item \textbf{Students become interns in the companies in order to gain experience in the desired area of industry.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D2]}] All users provide accurate information when creating profiles.
+        \item[\textbf{[D4]}] Companies provide accurate information about an internship.
+        \item[\textbf{[D8]}] Students complete selection process steps within deadlines.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[FR28-FR30]}] Cover internship application and selection process..
+        \item[\textbf{[FR32]}] Cover initiation of internships by companies and universities.
+    \end{enumerate}
+    
+    \item \textbf{The platform provides a transparent and fair selection process where companies can evaluate and select suitable candidates.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D7]}] Companies respond to applications promptly.
+        \item[\textbf{[D8]}] Students complete selection process steps within deadlines.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[FR29-FR31]}] Cover movement of candidates through stages, rejection, and acceptance notifications.
+        \item[\textbf{[FR32]}] Cover approval of internships by universities.
+    \end{enumerate}
+    
+    \item \textbf{The platform offers a recommendation system that matches students to internships based on their CVs, skills, and preferences, as well as company requirements.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D2]}] All users provide accurate information when creating profiles.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+         \item[\textbf{[FR26]}] Cover the recommendation system for internships based on student profiles.
+    \end{enumerate}
+    
+    \item \textbf{The platform allows universities to monitor internships to ensure alignment with academic standards.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D3]}] Universities actively engage with the platform in order to monitor active internships and to resolve complaints.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+         \item[\textbf{[FR33]}] Cover monitoring by universities during internships.
+         \item[\textbf{[FR34, FR35]}] Cover feedback collection and review by universities.
+    \end{enumerate}
+    
+    \item \textbf{The platform collects feedback from both students and companies to improve the platform’s functionality.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D4]}] Companies provide accurate information about an internship.
+        \item[\textbf{[D6]}] Submitted complaints are genuine and not misused to create unnecessary conflicts.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+         \item[\textbf{[FR36,FR37]}] Cover feedback collection after internships.
+         \item[\textbf{[FR38]}] Cover review and optional publication of feedback by universities.
+    \end{enumerate}
+    
+    \item \textbf{Ensure a safe and supportive environment by providing students with mechanisms to file complaints and enabling universities to resolve them.}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+        \item[\textbf{[D3]}] Universities actively engage with the platform in order to monitor active internships and to resolve complaints..
+        \item[\textbf{[D6]}] Submitted complaints are genuine and not misused to create unnecessary conflicts.
+    \end{enumerate}
+    \begin{enumerate}[label={\textbf{[D\arabic*]}}]
+         \item[\textbf{[FR33,FR34]}] Cover submission and resolution of complaints.
+         \item[\textbf{[FR35]}] Cover termination of internships based on complaints.
+    \end{enumerate}
+    
+\end{enumerate}
