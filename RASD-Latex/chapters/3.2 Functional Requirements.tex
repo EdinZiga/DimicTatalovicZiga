@@ -1,5 +1,3 @@
-
-
 \newcounter{reqCounter} % Define a custom counter for functional requirements
 \stepcounter{reqCounter}
 
@@ -94,6 +92,7 @@ Within this section can be found a list of functional requirements for S\&C, cat
 The following section presents the identified use cases for S\&C, using the fully dressed format.
 
 \paragraph{Registration, Login \& Profile Editing}
+
 \begin{itemize}[label={[\textbf{UC\arabic{ucCounter}}]}, align=left, leftmargin=*]
      \item \stepcounter{ucCounter} Student and University User Registration\\
      \textbf{Actors:} Student or University users\\
@@ -136,6 +135,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[6-7a.] The platform is unable to redirect the user.
     \end{enumerate}
 
+    \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC1.png}
+    	\caption{UC1 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+
     \item \stepcounter{ucCounter} Student and University User Login\\
      \textbf{Actors:} Student or University users\\
      \textbf{Preconditions:} The user has accessed the platform sign in page. The user has a institutionally provided account which is registered on the platform.\\
@@ -173,6 +178,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[4a.] The user is unable to sign in into his institutional account.
         \item[4-5a.] The platform is unable to redirect the user.
         \end{enumerate}
+
+    \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC2.png}
+    	\caption{UC2 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
      
      
      \item \stepcounter{ucCounter} Register Company User \\
@@ -221,7 +232,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[8a.] The user's credentials are invalid.
         \item[9a.] The user is unable to upload his tax certificate.
     \end{enumerate}
-     
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC3.png}
+    	\caption{UC3 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
      
      \item \stepcounter{ucCounter} Login Company User \\
      \textbf{Actors:} Company User\\
@@ -255,6 +271,12 @@ The following section presents the identified use cases for S\&C, using the full
             \end{enumerate}
         \item[2a.] The platform is unable to redirect the user.
         \end{enumerate}
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC4.png}
+    	\caption{UC4 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
         
         
      \item \stepcounter{ucCounter} Edit profile \\
@@ -290,6 +312,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[4a.] The changes are unable to be saved due to a server error.
         \end{enumerate}
 \end{itemize}
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC5.png}
+    	\caption{UC5 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
 
 
 \paragraph{Internship Advertisement Creation and Editing}
@@ -328,6 +356,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[4a.] The advertisement is unable to be published due to server error.
         \end{enumerate}
 
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC6.png}
+    	\caption{UC6 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+
      \item \stepcounter{ucCounter} Edit Internship Advertisement \\
      \textbf{Actors:} Company Users\\
      \textbf{Preconditions:} The company user has successfully logged into the platform and is viewing the landing page. The company user has at least one active advertisement.\\
@@ -361,6 +395,12 @@ The following section presents the identified use cases for S\&C, using the full
         \item[1a.; 5a.] The platform is unable to redirect the user.
         \item[4a.] The advertisement is unable to be published due to server error.
         \end{enumerate}
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC7.png}
+    	\caption{UC7 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
      
      \item \stepcounter{ucCounter} Delete Internship Advertisement \\
      \textbf{Actors:} Company Users\\
@@ -389,6 +429,12 @@ The following section presents the identified use cases for S\&C, using the full
         \end{enumerate}
      
 \end{itemize}
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC8.png}
+    	\caption{UC8 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
 
 \paragraph{Application process}
 
@@ -424,6 +470,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[5a.] The platform fails to display the confirmation prompt.
         \item[4a.] The maximum number of applicants has been reached
         \end{enumerate}
+
+        
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC9.png}
+    	\caption{UC9 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
      
     \item \stepcounter{ucCounter} Change candidate status (increment or reject) \\
     \textbf{Actors:} Company users, Student users\\
@@ -456,7 +509,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[5a.] The platform fails to make the status change due to server error.
         \end{enumerate}
 
-
+    
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC10.png}
+    	\caption{UC10 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+    
     \item \stepcounter{ucCounter} Send Prompt to Candidate (questionnaire or interview invitation)
     \textbf{Actors:} Company users, Student users\\
      \textbf{Preconditions:} The company user is logged into the platform and is viewing candidate management page for an active internship advertisement. There is at least one applicant above Stage 1.\\
@@ -484,6 +543,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[1a.] The candidate profiles are unable to be viewed due to server error. 
         \item[4a.] The system fails to process the invitation due to server error.
         \end{enumerate}
+
+    
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC11.png}
+    	\caption{UC11 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
 
 
     \item \stepcounter{ucCounter} Reply to invitation \\
@@ -513,7 +579,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[4-5a.] The system is unable to process the reply due to a server error. 
         \end{enumerate}
 
-
+    
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC12.png}
+    	\caption{UC12 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+    
         
     \item \stepcounter{ucCounter} Initiate Internship \\
     \textbf{Actors:} Company users, University users, Student users\\
@@ -547,6 +619,13 @@ The following section presents the identified use cases for S\&C, using the full
         
         \end{enumerate}
 
+        
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC13.png}
+    	\caption{UC13 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+
 
     \item \stepcounter{ucCounter} Submit Complaint \\
     \textbf{Actors:} Student users, University users\\
@@ -574,6 +653,13 @@ The following section presents the identified use cases for S\&C, using the full
             \end{enumerate} 
         \item[4a.] The system fails to process the request due to server error.
         \end{enumerate}
+
+    
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC14.png}
+    	\caption{UC14 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
 
 
     \item \stepcounter{ucCounter} Resolve complaint \\
@@ -604,6 +690,14 @@ The following section presents the identified use cases for S\&C, using the full
         \end{enumerate}
 
 \end{itemize}
+
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC15.png}
+    	\caption{UC15 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+
 
 \paragraph{Feedback management}
 
@@ -638,6 +732,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[6a.] The system is unable to process the reply due to a server error. 
         \end{enumerate}
 
+        
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC16.png}
+    	\caption{UC16 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
+
 
     \item \stepcounter{ucCounter} View feedback. \\
     \textbf{Actors:} Student users, Company users, University users\\
@@ -664,6 +765,13 @@ The following section presents the identified use cases for S\&C, using the full
         \item[1a.] The notifications are unable to be viewed to be viewed due to server error.
         \end{enumerate}
 \end{itemize}
+
+
+     \begin{figure}[H]
+    	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/Use Case Diagrams/UC17.png}
+    	\caption{UC17 - diagram}
+    	\label{fig:DataRequest}
+    \end{figure}
 
 
 
