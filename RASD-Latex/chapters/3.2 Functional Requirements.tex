@@ -81,10 +81,14 @@ Within this section can be found a list of functional requirements for S\&C, cat
     \item \stepcounter{reqCounter} The system shall request the university to review the submitted internship feedback. After the review, the system shall allow the university to either include the ratings in the profiles of both the student user and the company user, or keep the feedback private.
 \end{itemize}
 
+
 \subsubsection{Use cases Diagram}
-
-
-\pagebreak
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.9\textheight]{Diagram 4.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
 
 \subsubsection{Use cases}
 The following section presents the identified use cases for S\&C, using the fully dressed format.
@@ -511,7 +515,7 @@ The following section presents the identified use cases for S\&C, using the full
 
 
         
-    \item \stepcounter{ucCounter} Initiate Internship
+    \item \stepcounter{ucCounter} Initiate Internship \\
     \textbf{Actors:} Company users, University users, Student users\\
      \textbf{Preconditions:} The student user is logged into the platform and is viewing the an active internship advertisement. The company has at least one candidate who has reached the final stage.\\
      \textbf{Success Guarantee (Postconditions):} The internship has successfully been started. \\
