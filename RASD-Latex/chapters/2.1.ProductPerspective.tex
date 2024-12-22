@@ -64,6 +64,7 @@ The relationships between these classes reflect real-world interactions. For ins
 
 \quad This section is going to visually present lifecycle of different components on the platform using state diagrams. Following state diagrams are covering management of internship advertisement, internship application and complaint handling. \\
 
+\newpage
 \textbf{Internship advertisement management}\\
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/state_diagram.png}
@@ -73,6 +74,7 @@ The relationships between these classes reflect real-world interactions. For ins
 
 This diagram represents the lifecycle of an internship advertisement on the platform, focusing on states like \textit{Draft}, \textit{Active}, \textit{Inactive}, and \textit{Deleted}. Internship advertisement lifecycle starts from the state \textit{Draft}. This is the initial state when a company starts creating an internship advertisement until it is published. Companies can add details such as required skills, project descriptions, and selection processes. Once the advertisement is finalized and submitted, it transitions to the \textit{Active} state. Active advertisements are visible to students, allowing them to search and apply. The advertisement can be marked as inactive by the company if it's no longer available or requires updates. Inactive advertisements are not visible to students. If the advertisement is no longer needed, it transitions to the \textit{Deleted} state. Deleted advertisements are permanently removed from the platform. Transitions between these states occur based on user actions.\\
 
+\newpage
 \textbf{Internship application management}\\
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/state_diagram_2.png}
@@ -82,6 +84,7 @@ This diagram represents the lifecycle of an internship advertisement on the plat
 
 Application and selection process for students and companies are showed in the state diagram above (figure 3). After a student applies for an internship, their application enters the \textit{Under Review} state. The company evaluates the application based on the CV and profile. If the student’s application meets the company’s criteria, it transitions to the \textit{Shortlisted} state. The student is notified of their progress. After shortlisting, the selection process begins. This could involve questionnaires, interviews, or other methods defined by the company. The platform keeps track of the student's progress through each stage. If the student is not a fit, their application transitions to the \textit{Declined} state with the reason for that decision indicated by the company. The student is notified of the rejection. On the other hand, if the student successfully completes all selection stages, their application moves to the \textit{Accepted} state. This indicates that the student has secured the internship. \\
 
+\newpage
 \textbf{Complaint management}\\
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RASD-Latex/assets/state_diagram_3.png}
