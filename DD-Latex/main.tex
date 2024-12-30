@@ -10,12 +10,97 @@
 \usepackage{listings}
 \usepackage{tabularx}
 \usepackage{caption}
+\usepackage{pdflscape}
 %\captionsetup[figure]{labelformat=empty}
 
 
-\title{Requirement Analysis and Specification Document}
-\author{Veljko Tatalovic, Nikola Dimic, Edin Ziga}
+\title{Design Document}
+\author{Veljko Tatalović, Nikola Dimić, Edin Žiga}
 \date{\today}
 \begin{document}
-And this is some text
+    \begin{titlingpage} 
+        \begin{center}
+            \includegraphics[height=5cm]{./RASD-Latex/assets/Logo_Politecnico_Milano.png}\\
+            \vspace{4cm}
+            \begin{huge} 
+                \textbf{\thetitle} \\
+            \end{huge}
+            \vspace{0.3cm}
+            \begin{Large}
+                \textit{Students \& Companies} \\
+                \vspace{0.3cm}
+                \textit{\today}
+            \end{Large}
+        \end{center}
+
+            \vspace{4cm}
+             \begin{large}
+            \textbf{Authors:}
+            \begin{itemize}
+                \item Dimić Nikola
+                \item Tatalović Veljko 
+                \item Žiga Edin
+            \end{itemize}
+        \end{large}
+    \end{titlingpage}
+    \newpage
+    \tableofcontents
+    \newpage
+        
+    \section{Introduction}
+        \subsection{Purpose}
+            \input{DD-Latex/chapters/DD-1.1. Purpose}
+        \subsection{Scope}
+            \input{DD-Latex/chapters/DD-1.2. Scope}
+        \subsection{Definitions, Acronyms, Abbreviations}
+            \input{DD-Latex/chapters/DD-1.3. DefinitionAcronymAbbreviations}
+        \subsection{Revision history}
+            \input{DD-Latex/chapters/DD-1.4. RevisionHistory}
+        \subsection{Reference documents}
+            \input{DD-Latex/chapters/DD-1.5. ReferenceDocuments}
+        \subsection{Document structure}
+            \input{DD-Latex/chapters/DD-1.6. DocumentStructure}
+        
+    \newpage
+    \section{Architectural Design}
+        \subsection{Overview}
+            \input{DD-Latex/chapters/DD-2.1. Overview}
+        \subsection{Component view}
+            \input{DD-Latex/chapters/DD-2.2. Component view}
+        \subsection{Deployment view}
+            \input{DD-Latex/chapters/DD-2.3. Deployment view}
+        \subsection{Runtime view}
+            \input{DD-Latex/chapters/DD-2.4. Runtime view}
+        \subsection{Component interfaces}
+            \input{DD-Latex/chapters/DD-2.5. Componenet interfaces}
+        \subsection{Selected architectural styles and patterns}
+            \input{DD-Latex/chapters/DD-2.6. Selected architectural styles and patterns}
+        \subsection{Other design decisions}
+            \input{DD-Latex/chapters/DD-2.7. Other design decisions}
+
+    \newpage
+    \section{User Interface Design}
+        \input{DD-Latex/chapters/DD-3. User Interface Design}
+
+    \newpage
+    \section{Requirements Traceability}
+        \input{DD-Latex/chapters/DD-4. Requirements Traceability}
+
+    \newpage
+    \section{Implementation, Integration and Test Plan}
+        \subsection{Overview}
+            \input{DD-Latex/chapters/DD-5.1. Overview}
+        \subsection{Implementation Plan}
+            \input{DD-Latex/chapters/DD-5.2. Implementation Plan}
+        \subsection{Component Integration and Testing}
+            \input{DD-Latex/chapters/DD-5.3. Component Integration and Testing}
+        \subsection{System testing}
+            \input{DD-Latex/chapters/DD-5.4. System testing}
+        \subsection{Additional specifications on testing}
+            \input{DD-Latex/chapters/DD-5.5. Additional specifications on testing}
+
+    \newpage
+    \section{Effort spent}
+        \input{DD-Latex/chapters/DD-6. Effort Spent}
+            
 \end{document}
