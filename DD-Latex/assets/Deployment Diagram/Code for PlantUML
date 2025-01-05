@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+!define AWSCloudNode "«server»\nAWS Cloud Server"
+node "«device»\nPersonal Computer (PC)" {
+  artifact "«artifact»\nOperating System" {
+    artifact "«artifact»\nBrowser" {
+      artifact "«artifact»\nWeb Application" as WebApp
+    }
+  }
+}
+
+node "«device»\nFirewall" as Firewall
+
+node "«device»\nLoad Balancer" as Load_Balancer
+
+node AWSCloudNode {
+  node "«server»\nEC2 Instance" as EC2 {
+    artifact "«artifact»\nWeb Application" as WebApp
+  }
+  
+  node "«server»\nRDS Instance" as RDS {
+    artifact "«artifact»\nDatabase" as DB
+  }
+}
+
+WebApp --> Firewall : «protocol»\nHTTP(S)
+Firewall --> Load_Balancer : «protocol»\nHTTP(S)
+Load_Balancer --> EC2 : «protocol»\nHTTP(S)
+EC2 --> DB : «protocol»\nJDBC / HTTPS
+@enduml
