@@ -2,13 +2,12 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
 
-%\begin{document}
 
 % Table 1
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \renewcommand{\arraystretch}{1.5} % Adjust row spacing
-    \begin{tabular}{|C{0.3\textwidth}|L{0.65\textwidth}|} % Left column centered, right column left-aligned
+    \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|} % Allow text wrapping
         \hline
         \textbf{Requirements} & 
         \textbf{Registration of Students} \par
@@ -26,6 +25,7 @@
         \hline
     \end{tabular}
 \end{table}
+
 
 % Table 2
 \begin{table}[h]
@@ -250,7 +250,5 @@
         \hline
     \end{tabular}
 \end{table}
-
-%\end{document}
 
 \clearpage
