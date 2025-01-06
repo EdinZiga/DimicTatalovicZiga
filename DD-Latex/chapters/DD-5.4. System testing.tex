@@ -1,1 +1,22 @@
-This is some text
+System Testing
+
+Students\&Companies (S\&C) is a platform designed to match students with internships posted by various companies. To ensure that the platform delivers the intended functionalities, it must be tested thoroughly. During development, each individual component is tested in isolation; however, only when these components are integrated into the overall architecture can the entire system be tested as a whole. This holistic testing is critical for verifying both functional and non-functional requirements.
+
+Once smaller modules have been validated, they are incrementally added to the platform’s software architecture. After the entire architecture is built, system testing can begin in full. The primary objective of this phase is to confirm that S\&C meets every requirement as documented in the RASD (Requirements Analysis and Specification Document). In this process, all stakeholders involved in software development—including, but not limited to, developers, project managers, student representatives, and company representatives—contribute to testing. Below is an outline of the main testing strategies we employ:
+
+\begin{itemize}
+  \item \textbf{Functional Testing:} 
+  This is performed to verify that all functional requirements are satisfied. The most effective way to conduct this test is to run S\&C according to the use cases described in the RASD and check whether each function (e.g., internship listing, student application, company account creation) is working as specified.
+
+  \item \textbf{Performance Testing:} 
+  The main goal of this testing is to identify potential bottlenecks that might affect response time, scalability, and throughput. We also watch for inefficient algorithms or configurations in hardware and network usage. Performance tests include stress scenarios with large numbers of internship postings and concurrent student applications, helping us uncover optimization possibilities.
+
+  \item \textbf{Usability Testing:}
+  This type of testing observes real users—students and companies—as they navigate and use S\&C. We gather feedback on how intuitive the interface is, whether the users can easily find and apply to internships, and if companies can smoothly post or edit internship advertisements. The focus here is on the human interaction aspect.
+
+  \item \textbf{Load Testing:}
+  In load testing, we deliberately place S\&C under heavy usage scenarios to ensure that it can handle spikes of activities, such as large numbers of concurrent logins or applications submitted at the same time. This helps reveal any potential memory leaks or resource mismanagement issues. By simulating peak load conditions, we can assess how long the system can remain stable and responsive.
+
+  \item \textbf{Stress Testing:}
+  Stress tests push the system beyond its expected capacity to see how it recovers when resources become saturated. We may artificially inflate the number of users or reduce available system resources to see if S\&C fails gracefully and recovers quickly. These extreme conditions help us confirm that worst-case scenarios are handled in a controlled manner.
+\end{itemize}
