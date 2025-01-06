@@ -1,22 +1,3 @@
 This chapter provides a detailed explanation of how the platform described in the previous sections will be developed and tested. The primary goal of the testing process is to identify and resolve the majority of bugs present in the code written by the development team. This ensures the platform functions as intended and meets its requirements. Furthermore, section 5.3 will offer a comprehensive explanation of how the various components of the code are integrated and interact with one another to create a cohesive system. Meanwhile, section 5.2 will focus on outlining the most important strategies and methods used during the implementation phase to successfully develop the project.
 
 
-\subsection{5.2.1 Features Identification}
-The features to implement are described starting from the requirements. Some requirements involve the development of new components, while others only require minor changes. Below is a summary of the most important features identified from the functional requirements.
-
-\subsubsection*{[F1] Student and Company Registration}
-This feature enables students and companies to register on the platform. For students, the system verifies their institutional accounts, while for companies, email verification and additional validation steps, such as providing a tax certificate, are required. These operations are fundamental for ensuring user identity and data integrity.
-
-\subsubsection*{[F2] Internship Advertisement Creation and Management}
-This core feature allows verified company users to create, edit, and manage internship advertisements. Key functionalities include specifying internship details, saving drafts, and integrating AI-generated suggestions to enhance the advertisements. This feature directly supports the primary goal of matching students with suitable internships and requires thorough testing to ensure reliability.
-
-\subsubsection*{[F3] Internship Search and Application}
-This feature allows students to search for internships and apply directly through the platform. The system recommends internships based on the student’s profile and qualifications. Upon application, the student’s profile is added to the list of applicants, and notifications are sent to the relevant company users. This feature is critical for fostering engagement between students and companies.
-
-\subsubsection*{[F4] Internship Monitoring and Complaint Management}
-This feature allows students, companies, and universities to monitor ongoing internships and submit complaints if needed. The system notifies the relevant parties and allows universities to resolve issues or terminate internships. Testing this functionality is essential to ensure smooth conflict resolution and maintain platform trustworthiness.
-
-\subsubsection*{[F5] Feedback Collection and Profile Integration}
-After the completion of internships, feedback is collected from students, companies, and universities. The system allows universities to review and optionally integrate ratings into user profiles. This feature supports continuous improvement of the platform and enhances user profiles for future opportunities.
-
-The majority of these features require seamless interaction between the client and server. Therefore, the dispatcher component must be developed at the very beginning to support effective communication and functionality across the platform.
