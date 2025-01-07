@@ -21,10 +21,7 @@
 AdvertisementManager
 InternshipManager
 RecommendationManager
-
-
 AccountManager
-
 Application Protocol Interface (API)
 ApplicationManager
 AuthenticationManager
@@ -34,3 +31,78 @@ FeedbackManager
 Database
 InstitutionalAuthenticator
 S&C Web App Instance
+
+
+Registration of Students
+AccountManager
+Application Protocol Interface (API)
+AuthenticationManager
+Database
+InstitutionalAuthenticator
+S&C Web App Instance
+
+Registration of Companies
+AccountManager
+Application Protocol Interface (API)
+AuthenticationManager
+Database
+InstitutionalAuthenticator
+S&C Web App Instance
+
+Registration of Universities
+AccountManager
+Application Protocol Interface (API)
+AuthenticationManager
+Database
+InstitutionalAuthenticator
+S&C Web App Instance
+
+
+Profile Management
+AccountManager
+Application Protocol Interface (API)
+AuthenticationManager
+Database
+InstitutionalAuthenticator
+S&C Web App Instance
+
+Internship Advertisement Creation and Management
+AdvertisementManager
+AccountManager
+Application Protocol Interface (API)
+Database
+InstitutionalAuthenticator
+InternshipManager
+RecommendationManager
+S&C Web App Instance
+
+
+Internship Search, Application, and Management of Applications
+AdvertisementManager
+AccountManager
+Application Protocol Interface (API)
+Database
+InstitutionalAuthenticator
+InternshipManager
+RecommendationManager
+S&C Web App Instance
+
+
+Internship Monitoring, Complaint
+AccountManager
+Application Protocol Interface (API)
+ComplaintManager
+Database
+InstitutionalAuthenticator
+InternshipManager
+S&C Web App Instance
+
+Management & Feedback System
+AccountManager
+Application Protocol Interface (API)
+Database
+FeedbackManager
+InstitutionalAuthenticator
+InternshipManager
+S&C Web App Instance
+
