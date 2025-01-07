@@ -22,12 +22,12 @@ components explained in this document.
         [FR3] The system shall allow the registration of student users only if they are classified as students within the institutional account they provide. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-        %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        AuthenticationManager \par
+        Database \par
+        InstitutionalAuthenticator \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -57,7 +57,11 @@ components explained in this document.
         \\
         \hline
         \textbf{Components} & 
-        %WebApp \newline API \newline AuthenticationManager \newline %AccountManager \newline Database \newline GitHub 
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        AuthenticationManager \par
+        Database \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -80,12 +84,12 @@ components explained in this document.
         S\&C, the system shall reject the registration attempt. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-        %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        AuthenticationManager \par
+        Database \par
+        InstitutionalAuthenticator \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -119,12 +123,12 @@ components explained in this document.
         field to provide AI-generated suggestions for profile improvements. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-        %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        AuthenticationManager \par
+        Database \par
+        InstitutionalAuthenticator \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -162,12 +166,14 @@ components explained in this document.
         ID and publication timestamp. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-        %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AdvertisementManager \par
+        AccountManager\par
+        Application Protocol Interface (API) \par
+        Database \par
+        InstitutionalAuthenticator \par
+        InternshipManager \par
+        RecommendationManager \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -181,7 +187,7 @@ components explained in this document.
     \begin{tabular}{|C{0.3\textwidth}|L{0.65\textwidth}|} % Left column centered, right column left-aligned
         \hline
         \textbf{Requirements} & 
-        \textbf{Internship Advertisement Creation and Management} \par
+        \textbf{Internship Search, Application, and Management of Applications} \par
         [FR26] The system shall analyze the profile of the student user upon login and recommend 3 internship advertisements based on matching
         qualifications and background, and display these recommendations
         prominently to the student user. \par
@@ -212,12 +218,14 @@ components explained in this document.
         on a predetermined date. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-       %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AdvertisementManager \par
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        Database \par
+        InstitutionalAuthenticator \par
+        InternshipManager \par
+        RecommendationManager \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
@@ -253,12 +261,14 @@ components explained in this document.
         student user and the company user, or keep the feedback private. \\
         \hline
         \textbf{Components} & 
-        %WebApp \par
-        %API \par
-        %AuthenticationManager \par
-        %AccountManager \par
-        %Database \par
-        %GitHub 
+        AccountManager \par
+        Application Protocol Interface (API) \par
+        ComplaintManager \par
+        FeedbackManager \par
+        Database \par
+        InstitutionalAuthenticator \par
+        InternshipManager \par
+        S\&C Web App Instance \par
         \\
         \hline
     \end{tabular}
