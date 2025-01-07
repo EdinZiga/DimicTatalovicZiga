@@ -1,1 +1,154 @@
-This is some text
+\begin{enumerate}
+    \item \textbf{AccountManager}
+    \begin{enumerate}
+        \item getUserData(tokenUserID)
+        \item insert(userData)
+        \item parseToken(authToken)
+        \item post(authToken, certificate)
+        \item request(userData)
+        \item return(userData)
+        \item return(userID)
+        \item return(userNotPresent)
+    \end{enumerate}
+    \item \textbf{AdvertisementManager}
+    \begin{enumerate}
+        \item delete(advertisement)
+        \item patch(advertisement)
+        \item post(newAdvertisement)
+        \item post(userID)
+        \item request(advertisements)
+        \item return(confirmation)
+
+    \end{enumerate}
+    \item \textbf{AuthenticationManager}
+    \begin{enumerate}
+        \item generateToken(authToken)
+        \item return(authToken)
+        \item return(confirmation)
+        \item return(invalidCredentialsError)
+        \item return(institutionalSignInPage)
+        \item return(userData)
+
+    \end{enumerate}
+    \item \textbf{AWS Server}
+    \begin{enumerate}
+        \item post(authToken)
+        \item post(certificate)
+        \item post(deleteInternship)
+        \item post(feedback)
+        \item post(internshipStatusChange)
+        \item post(invitationReply)
+        \item post(newInternship)
+        \item post(updatedInternshipData)
+        \item request(advertisement)
+        \item request(candidates)
+        \item request(feedback)
+        \item request(openInvitations)
+        \item request(recommendations)
+        \item request(userID)
+        \item return(advertisement)
+        \item return(confirmation)
+        \item return(dataSharingConsentPage)
+        \item return(editProfilePage)
+        \item return(impossibleRequest)
+        \item return(invalidProfileChanges)
+        \item return(landingPage)
+        \item return(noOpenInvitations)
+        \item return(openInvitations)
+        \item return(rejectDataSharingError)
+        \item return(signInPage)
+        \item return(redirectLink)
+        \item return(userData)
+        
+    \end{enumerate}
+    \item \textbf{ComplaintManager}
+    \begin{enumerate}
+        \item insert(complaint)
+        \item patch(complaint)
+        \item return(confirmation)
+        \item return(error)
+
+    \end{enumerate}
+    \item \textbf{Database}
+    \begin{enumerate}
+        \item return(advertisement)
+        \item return(confirmation)
+        \item return(error)
+        \item return(userData)
+
+    \end{enumerate}
+    \item \textbf{FeedbackManager}
+    \begin{enumerate}
+        \item insert(feedback)
+        \item request(feedback)
+        \item return(confirmation)
+        \item return(error)
+
+    \end{enumerate}
+    \item \textbf{InstitutionalAuthenticator}
+    \begin{enumerate}
+        \item return(authToken)
+        \item return(confirmation)
+        \item return(institutionalSignInPage)
+        \item return(invalidCredentialsError)
+        \item return(userData)
+
+    \end{enumerate}
+    \item \textbf{InternshipManager}
+    \begin{enumerate}
+        \item delete(internshipData)
+        \item insert(application)
+        \item insert(candidatePrompt)
+        \item insert(invitationReply)
+        \item patch(internshipStatus)
+        \item patch(openInvitations)
+        \item patch(updatedInternshipData)
+        \item post(deleteInternship)
+        \item post(internshipData)
+        \item request(candidates)
+        \item request(openInvitations)
+        \item request(userID)
+        \item return(error)
+        \item return(noCandidates)
+        \item return(noOpenInvitations)
+        \item return(signInPage)
+    \end{enumerate}
+    \item \textbf{RecommendationManager}
+    \begin{enumerate}
+        \item match(userData, recommendationCache)
+        \item patch(recommendationCache)
+        \item request(advertisements)
+        \item request(matchedAdvertisements)
+        \item request(recommendationCache)
+        \item request(userData)
+        \item return(confirmation)
+        \item return(recommendations)
+
+    \end{enumerate}
+    \item \textbf{S\&C Web App Instance}
+    \begin{enumerate}
+        \item post(acceptDataSharing)
+        \item post(applyToAdvertisement)
+        \item post(candidatePrompt)
+        \item post(complaint)
+        \item post(complaintUpdate)
+        \item post(feedback)
+        \item post(invitationReply)
+        \item post(internshipStatusChange)
+        \item post(profileChanges)
+        \item post(rejectDataSharing)
+        \item post(updatedInternshipData)
+        \item request(advertisement)
+        \item request(candidates)
+        \item request(editProfilePage)
+        \item request(feedback)
+        \item request(institutionalSignIn)
+        \item request(institutionalSignInPage)
+        \item request(openInvitations)
+        \item request(recommendations)
+        \item request(signInPage)
+        \item return(landingPage)
+        \item return(noOpenInvitations)
+        \item return(openInvitations)
+    \end{enumerate}
+\end{enumerate}
