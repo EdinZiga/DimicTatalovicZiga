@@ -1,5 +1,10 @@
+Unlike other implementations, many of the design decisions regarding availability, data storage, and security will be omitted simply because AWS provides a plug-and-play solution to many of these concerns.
+
 \subsubsection{Availability}
+The system is expected to be available 24/7 with minimal impact on the performance of the platform, regardless of the number of users interacting with it at any given time. As these design decisions are commonly referred to as Nonfunctional Requirements (NFRs), more details can be found within the RASD v1 document provided alongside this design document.
 
 \subsubsection{Data Storage}
+In terms of data storage, the platform will utilize a classic SQL-based database, with the possibility of an additional document-based database being implemented alongside the main database should the need arise. Hosting the database on AWS allows for easy expansion, regardless of the eventual size of the resulting database.
 
 \subsubsection{Security}
+As the system will support external authentication (many of which support and require multi-factor authentication to function), many security concerns regarding the protection of user accounts from brute-force attacks have already been addressed. Moreover, the platform will exclusively use secure communication protocols and multiple layers of encryption, in addition to being hosted on AWS, which should provide more than adequate security measures for the scope of this platform.
