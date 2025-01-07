@@ -1,0 +1,36 @@
+[UC1] Student and University User Registration
+[UC2] Student and University User Login
+[UC3] Register Company User
+[UC4] Login Company User
+[UC5] Edit profile
+[UC6] Create and Publish Internship Advertisement
+[UC7] Edit Internship Advertisement
+[UC8] Delete Internship Advertisement
+[UC9] View Recommendations & Offerings, Apply for Internship
+[UC10] Change candidate status (increment or reject)
+[UC11] Send Prompt to Candidate (questionnaire or interview invitation)
+[UC12] Reply to invitation
+[UC13] Initiate Internship
+[UC14] Submit Complaint
+[UC15] Resolve complaint
+[UC16] Submit feedback.
+
+[UC17] View feedback.
+
+
+AdvertisementManager
+InternshipManager
+RecommendationManager
+
+
+AccountManager
+
+Application Protocol Interface (API)
+ApplicationManager
+AuthenticationManager
+ComplaintManager
+FeedbackManager
+
+Database
+InstitutionalAuthenticator
+S&C Web App Instance
