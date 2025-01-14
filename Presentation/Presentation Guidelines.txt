@@ -1,0 +1,54 @@
+Dear students,
+
+The forum for project discussion enrolment is now open and available HERE.
+
+You will find all the available slots and further instructions. Please, enrol in your selected slot by answering the corresponding message.
+
+Here are some instructions regarding the organization of the final steps for the R&DD and I&T projects and their presentations.
+
+First of all, students taking the R&DD project should submit their final documents by the due deadline. Should they realize they need to change one of their documents after this deadline and before their presentation, they can do so after informing their reference professor.
+Also, students taking the R&DD+I&T project can perform a new update of their RASD and DD by the release of their implementation. Please make sure that you include any change in the release table of your document and you create a different pdf file for each new version in your delivery folder.
+
+You will give your project presentation in English. The purpose is to make sure that you get some exercise with presentations in English. No worries if you are not proficient in English, we will understand anyway! Should you feel it is too difficult, you can give it in Italian, but consider this option as the very last resort.
+
+Presentations will be held in person. However, if students cannot reach Politecnico (for example because they are Erasmus students, or because of other motivated reasons), they can give the presentation remotely informing the reference professor in advance.
+
+In-person presentations will be held in the room indicated in the schedule. Each room is equipped with a projector. You will be able to connect to the projector through an HDMI cable or via Wifi+Chrome.
+
+Remote presentations will be held using the Webex room of the reference professor.  You will give the presentation by sharing your screen with the professor, as done in virtual classes.
+
+You should indeed prepare a presentation (for example in Powerpoint, but you are going to present it with your own computer, so you can use whatever software you want, as long as it works on your computer).
+
+You will have 10 minutes for R&DD presentations, and 20 minutes for R&DD+I&T presentations (i.e., for those teams that do the second part of the exam through the implementation). Students that belong to groups of 2 or 3 people must take turns during the presentation (i.e., every student should give part of the presentation, you can decide how to split the presentation among team members).
+
+During your project presentation, time will be limited. Please be sure to stay within the allotted time: if you run out of time, we will have to stop you. To cope with time limitation, we will read your documents (and code for those working on the implementation) before the discussion. So, you will not need to give us too much background information on your work and you can focus on those aspects that you think are most relevant in your case and are characterizing your specific project.
+
+Concerning the aspects on which to focus: you can choose what is "most relevant", but you can consider the possibility of tackling some of these questions for the RASD part:
+
+    What are the goals of the system?   
+    What are its boundaries? (for example describe some world and machine phenomena to highlight the boundaries)
+    What is a meaningful use case?   
+    What are the most important three to five requirements?   
+    What are the most important assumptions?   
+    What do you aim to analyse and prove through the Alloy model?
+
+For the DD part some issues you could tackle are:
+
+    What are the components of your system?
+    What are their interfaces?
+    What architectural styles and paradigms (including patterns) did you use?
+    What are the meaningful interactions?
+    What strategy did you plan to use to carry the implementation, integration and testing of your system? How is that strategy mapped on your components?
+
+For the Implementation and Testing part, we expect teams to provide a short demo of the implemented system.
+In addition, some of the things you might consider tackling in the presentation are:
+
+    What frameworks did you use to implement the system (and why did you use them)?
+    Are there some meaningful algorithmic solutions that you would like to point out?
+    How is the code structured? How does it match the design?
+    What test cases did you run? How did you select them? What were the outcomes?
+
+Again, what you decide to focus on is up to you (as mentioned above, we will look at your documentation before the discussions, and we might even have questions about things that you did not touch during the presentation, but which are present in your documentation).
+
+Best,
+Matteo Camilli, Elisabetta Di Nitto, and Matteo Rossi
